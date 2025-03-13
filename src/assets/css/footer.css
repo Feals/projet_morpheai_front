@@ -1,6 +1,6 @@
 footer {
   height: 50px;
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: hsla(240, 57%, 21%, 0.705);
