@@ -8,7 +8,7 @@ const initialState = {
 };
 
 export default function classificationReducer(state = initialState, action) {
-  const asyncActionHandlers = [{ types: CLASSIFICATION_REQUEST, key: "token" }];
+  const asyncActionHandlers = [{ types: CLASSIFICATION_REQUEST, key: "dream" }];
 
   for (const { types, key } of asyncActionHandlers) {
     const newState = asyncReducer(state, action, types, key);

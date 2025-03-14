@@ -4,7 +4,6 @@ import { showErrorToast } from "../../components/toast/toastService";
 export const classificationRequest = (userData) => {
   return async (dispatch) => {
     dispatch(classificationRequestActions.request());
-
     try {
       const response = await fetch(
         `${import.meta.env.VITE_AI_URL}/classificationDream/request`,

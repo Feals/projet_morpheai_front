@@ -6,6 +6,7 @@ import { dreamSchema } from "./validationSchemas";
 import FormField from "./formField";
 
 const DreamForm = () => {
+  const dream = useSelector((state) => state.classification.dream);
   const dispatch = useDispatch();
 
   const [initialValues, setInitialValues] = useState({
@@ -41,6 +42,7 @@ const DreamForm = () => {
           className="textArea"
         />
       </FormContainer>
+      {dream && <p>{dream}</p>}
     </div>
   );
 };
