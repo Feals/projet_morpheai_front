@@ -8,6 +8,7 @@ import FormField from "./formField";
 const DreamForm = () => {
   const dream = useSelector((state) => state.classification.dream);
   const dispatch = useDispatch();
+  console.log("dream", dream["characters_code_"]);
 
   const [initialValues, setInitialValues] = useState({
     descriptionDream: "",
@@ -42,7 +43,7 @@ const DreamForm = () => {
           className="textArea"
         />
       </FormContainer>
-      {dream && <p>{dream}</p>}
+      <p>characters_code : {dream["characters_code_"]}</p>
     </div>
   );
 };
